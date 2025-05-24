@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if bn == "manoj" %}
+        <h1>Bhanja name is {{bn | capfirst }}</h1>
+    {% else %}
+        <p>No Name</p>
+    {% endif %}
+    {% if ba == 3 %}
+        <h1>Bhanja age is {{ba}}</h1>
+    {% else %}
+        <h1>Invalid Age </h1>
+    {% endif %}
+    {% if badd == 'Multai' %}
+        <h1>Bhanja ad is {{badd | upper}}</h1>
+    {% else %}
+        <h1> Invalid address</h1>
+    {% endif %}
+    <h1>current full date with time is {{dt}}</h1>
+    <h1>current full date is {{dt|date:"D d M y"}}</h1>
+    <h1>current day is {{dt|date:"D"}}</h1>
+    <h1>current date is {{dt|date:"d"}}</h1>
+    <h1>current Second is {{dt|date:"s"}}</h1>
+    <h1>today day in week {{dt|date:"w"}}</h1>
+    <h1>current date is {{dt|date:"z"}}</h1>
+    <h1>current Month is {{dt|date:"m"}}</h1>
+</body>
+</html>
